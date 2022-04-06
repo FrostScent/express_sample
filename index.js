@@ -10,8 +10,7 @@ app.get('/',(req,res) => {
 })
 
 app.post('/post', (req,res) => {
-    user = req.body.user
-    res.json({user:user})
+    res.json({status: 'ok',body: req.body})
 })
 
 const port = 8080
